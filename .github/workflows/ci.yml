@@ -27,7 +27,7 @@ jobs:
 
       - name: Run markdown lint
         run: |
-          npm install remark_cli remark-preset-lint-consistent
+          npm install remark-lint-emphasis-marker
           npx remark . --use remark-preset-lint-consistent --frail
           
       - uses: actions/upload-artifact@main
